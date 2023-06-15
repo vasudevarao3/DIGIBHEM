@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Hotel Booking Registration Form</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	<div class="container">
+        <h2>Hotel Registration Form</h2>
+		<div class="data_container" id="blur">
+            <div class="customer_info">
+                <h2>Customer Information</h2>
+                <div class="customer_content">
+                    <form class="reg-form" action="#" method="post" seamless="yes" id="reg_form">
+                        <div class="text_field">
+                            <input type="text" name="customer_name" required>
+                            <span></span>
+                            <label>Customer Name</label>
+                        </div>
+                        <div class="text_field">
+                            <input type="text" name="check_in_date" onfocus="this.type='date'" onfocusout="this.type='text'" required>
+                            <span></span>
+                            <label>Check-in Date</label>
+                        </div>
+                        <div class="text_field">
+                            <input type="number" name="number_of_days" id="number" required>
+                            <span></span>
+                            <label>Total No.Of Days</label>
+                        </div>
+                        <div class="text_field">
+                            <input type="number" name="number_of_persons" id="number" required>
+                            <span></span>
+                            <label>Total No.Of Persons</label>
+                        </div>
+                    <!--</form>
+                    <button id="next">NEXT</button>
+                </div>
+            </div>
+            <div class="room_info">
+                <h2>Room Information</h2>
+                <div class="room_data">
+                    <button id="previous">PREVIOUS</button> -->
+                    <div calss="room_options">
+                        Rooms Type:<br/>
+                        <div class="rooms_type">
+                            <div class="delux">
+                                <img src="src\Indian-Army-Day.jpg" width="100px" height="100px"><br/>
+                                <input type="radio" name="room_type" value="Delux" required>Delux - 2500/-
+                            </div>
+                            <div class="suite">
+                                <img src="src\Indian-Army-Day.jpg" width="100px" height="100px"><br/>
+                                <input type="radio" name="room_type" value="Suite" >Suite - 4000/-
+                            </div>
+                        </div>
+                        Amenities:<br/>
+                        <div class="amenities">
+                            <div class="ac">
+                                <img src="src\Indian-Army-Day.jpg" width="100px" height="100px"><br/>
+                                <input type="checkbox" name="amenities" value="AC" required>AC - 1000/-
+                            </div>
+                            <div class="locker">
+                                <img src="src\Indian-Army-Day.jpg" width="100px" height="100px"><br/>
+                                <input type="checkbox" name="amenities" value="Locker">Locker - 300/-
+                            </div>
+                        </div>
+                        <div class="text_field">
+                            <input type="number" name="advance_amount" id="number" required>
+                            <span></span>
+                            <label>Advance Amount</label>
+                        </div>
+                    </div>
+                    <a id="register" href="#">REGISTER</a>     
+                    </form>
+                </div>
+            </div>
+		</div>
+	</div>
+    <div id="popup">
+        <button id="close" >&times;</button>
+        <h2>Registered Details</h2>
+        <div class="registered_data">
+            <p>Customer Name : <span id="customers_name"></span></p>
+            <p>Check In Date : <span id="check_in_date"></span></p>
+            <p>Total No of Days : <span id="no_of_days"></span></p>
+            <p>Total No of Persons : <span id="no_of_persons"></span></p>
+            <p>Room Type : <span id="room_type"></span></p>
+            <p>Amenities : <span id="amenities"></span></p>
+            <p>Advance Amount : <span id="advance_amount"></span></p>
+            <p>Total Amount : <span id="total_amount"></span></p>
+            <p>Balance Amount : <span id="balance_amount"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+	</body>
+</html>
