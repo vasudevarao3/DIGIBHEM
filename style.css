@@ -191,7 +191,7 @@ a{
     cursor: pointer;
 }
 
- @media screen and (min-width: 450px) {
+@media screen and (min-width: 450px) {
 	.container .data_container .customer_info{
 		position:absolute;
 		right: 5px;
