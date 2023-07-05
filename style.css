@@ -18,6 +18,12 @@ body{
 
 }
 
+a{
+	text-decoration: none;
+    color:white;
+	cursor: pointer;
+}
+
 .container h2{
 	text-align:center;
 	color:white;
@@ -138,7 +144,7 @@ input[type=number]{
 	margin-top:2%;
 }
 
-a{
+.container .data_container .customer_info a{
 	border-radius: 5px;
 	text-decoration: none;
 	background-color: blue;
