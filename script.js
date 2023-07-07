@@ -77,7 +77,7 @@ function analysedata(){
     }
 
     var advance_amount = parseInt(d.elements.advance_amount.value);
-    var total_amount = (room_rate*number_of_days) + (comfort_rate*room_rate) + extra_charges;
+    var total_amount = (room_rate*number_of_days) + (comfort_rate*number_of_days) + extra_charges;
     var balance_amount = total_amount - advance_amount;
 
     document.getElementById("customers_name").innerHTML = customername;
