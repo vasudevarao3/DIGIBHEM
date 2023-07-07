@@ -34,8 +34,8 @@ function formValid(){
     // var room= document.getElementsByName("room_type");
     // var amenities=document.getElementsByName("room_type");
     var advance_amount = d.elements.advance_amount.value;
-    if(customername=='' || check_in_date=='' || number_of_days=='' || number_of_persons=='' ||advance_amount== '' ){
-        return false;  
+    if(customername=='' || check_in_date=='' || number_of_days=='' || number_of_persons=='' || advance_amount== '' ){
+        return false;
     }
     return true;
 }
@@ -78,7 +78,7 @@ function analysedata(){
 
     var advance_amount = parseInt(d.elements.advance_amount.value);
     var total_amount = (room_rate*number_of_days) + (comfort_rate*room_rate) + extra_charges;
-    var balance_amount =total_amount - advance_amount;
+    var balance_amount = total_amount - advance_amount;
 
     document.getElementById("customers_name").innerHTML = customername;
     document.getElementById("check_in_date").innerHTML = check_in_date;
@@ -88,5 +88,5 @@ function analysedata(){
     document.getElementById("amenities").innerHTML = amenity;
     document.getElementById("advance_amount").innerHTML = advance_amount;
     document.getElementById("total_amount").innerHTML = total_amount;
-    document.getElementById("balance_amount").innerHTML = balance_amount;   
+    document.getElementById("balance_amount").innerHTML = balance_amount;
 }
